@@ -1,0 +1,19 @@
+{
+  "name": "swipestripe/swipestripe-bulkdiscounts",
+  "description": "Bulk discounts support in SwipeStripe",
+  "license": "BSD-3-Clause",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "ecommerce", "e-commerce", "shop", "swipestripe", "swipe stripe", "discounts", "products"],
+  "authors": [
+    {
+      "name": "Plato Creative",
+      "email": "info@platocreative.co.nz"
+    }
+  ],
+  "require":
+  {
+    "silverstripe/framework": "~3.1",
+    "silverstripe/cms": "~3.1",
+    "swipestripe/swipestripe": "2.1.*"
+  }
+}
