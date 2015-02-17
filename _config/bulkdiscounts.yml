@@ -1,3 +1,11 @@
 ---
 name: SwipeStripe Bulk Discounts
 ---
+
+Item:
+  extensions: 
+    - 'BulkDiscount_Item'
+
+Product:
+  extensions: 
+    - 'BulkDiscount_Product'
