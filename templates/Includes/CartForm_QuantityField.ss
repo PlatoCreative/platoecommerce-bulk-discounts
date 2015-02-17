@@ -25,7 +25,7 @@
 		<% if $Item.BulkDiscountPercent %>
 			<br />
 			<span class="discount-buld-cart">
-				{$Item.BulkDiscountPercent}% discount for purchasing $Item.BulkDiscountNumber or more.
+				{$Item.BulkDiscountPercent}% discount applied for purchasing $Item.BulkDiscountNumber or more.
 			</span>
 		<% end_if %>
 	</td>
