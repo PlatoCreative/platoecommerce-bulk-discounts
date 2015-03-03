@@ -22,7 +22,7 @@
 	
 	<td>
 		$Item.UnitPrice.Nice
-		<% if $Item.BulkDiscountPercent %>
+		<% if $Item.BulkDiscountPercent > 0 %>
 			<br />
 			<span class="discount-buld-cart">
 				{$Item.BulkDiscountPercent}% discount applied for purchasing $Item.BulkDiscountNumber or more.
