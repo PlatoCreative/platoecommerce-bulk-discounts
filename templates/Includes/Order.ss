@@ -33,7 +33,7 @@
 						$Quantity
 						
 						<% if $BulkDiscountPercent > 0 %>
-							<p class="order-special">
+							<p class="order-special" style="color:#ed1c24;">
 								{$BulkDiscountPercent}%  discount applied for purchasing $BulkDiscountNumber or more.
 							</p>
 						<% end_if %>
