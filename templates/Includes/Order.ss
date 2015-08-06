@@ -9,17 +9,22 @@
 		</thead>
 		<tbody>
 			<% loop Items %>
-			
+
 				<tr  class="itemRow $EvenOdd $FirstLast">
 
 					<td>
-						<% with Product %>  
+						<% with Product %>
 							<% if Link %>
 								<a href="$Link" target="_blank">$Title</a>
 							<% else %>
 								$Title
 							<% end_if %>
 						<% end_with %>
+
+						<% if Product.SKU %>
+							<br />
+							<small>SKU: $Product.SKU</small>
+						<% end_if %>
 
 						<br />
 						$SummaryOfOptions
@@ -28,39 +33,39 @@
 					<td>
 						$UnitPrice.Nice
 					</td>
-				
+
 					<td>
 						$Quantity
-						
+
 						<% if $BulkDiscountPercent > 0 %>
 							<p class="order-special" style="color:#ed1c24;">
 								{$BulkDiscountPercent}%  discount applied for purchasing $BulkDiscountNumber or more.
 							</p>
 						<% end_if %>
 					</td>
-	
+
 					<td class="totals-column">$TotalPrice.Nice</td>
-				
+
 				</tr>
 			<% end_loop %>
-			
+
 			<% if SubTotalModifications %>
 				<% loop SubTotalModifications %>
 					$ShowOrderModification()
 				<% end_loop %>
 			<% end_if %>
-			
+
 			<tr>
 				<td class="row-header"><% _t('Order.SUB_TOTAL','Sub Total') %></td>
 				<td class="totals-column" colspan="3">$SubTotalPrice.Nice</td>
 			</tr>
-			
+
 			<% if TotalModifications %>
 				<% loop TotalModifications %>
 					$ShowOrderModification()
 				<% end_loop %>
 			<% end_if %>
-	
+
 			<tr>
 				<td class="row-header"><% _t('Order.TOTAL','Total') %></td>
 				<td class="totals-column" colspan="3">$TotalPrice.Nice</td>
