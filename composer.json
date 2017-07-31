@@ -1,6 +1,6 @@
 {
-  "name": "swipestripe/swipestripe-bulkdiscounts",
-  "description": "Bulk discounts support in SwipeStripe",
+  "name": "plato-creative/platoecommerce-bulk-discounts",
+  "description": "Bulk discounts support",
   "license": "BSD-3-Clause",
   "type": "silverstripe-module",
   "keywords": ["silverstripe", "ecommerce", "e-commerce", "shop", "swipestripe", "swipe stripe", "discounts", "products"],
